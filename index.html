@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link
+     href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="page-left">
+                <h1>Quam Tristique Condimentum</h1>
+                <p class="paragraph-upper">Duis mollis, est non commodo luctus,
+                     nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                      Cum sociis natoque penatibus et magnis dis parturient montes,
+                       nascetur ridiculus mus. <span>Curabitur blandit</span> tempus porttitor.
+                        Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                     Vestibulum id ligula porta felis euismod semper.</p>
+                <div class="content-middle">
+                    <div class="content-middle-left">
+                        <h2>Fringilla Euismod Adipiscing Ipsum</h2>
+                        <p class="paragraph-middle">Cum sociis natoque penatibus et magnis dis parturient montes,
+                            nascetur ridiculus mus. Maecenas faucibus mollis interdum.
+                            Aenean lacinia bibendum nulla sed.</p>
+                    </div>
+                    <div class="content-middle-right">
+                        <img id="image" src="..\img.jpg" alt="board">
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="list-upper">
+                        <div class="list-left">
+                            <div class="bullet-long bullet-top"></div>
+                            <div class="bullet-long"></div>
+                        </div>
+                        <div class="list-right">
+                            <p class="list-text">Tellus Ullamcorper Inceptos</p>
+                            <p class="list-text">Magna Condimentum</p>
+                        </div>
+                    </div>
+                    <div class="list-middle">
+                        <div class="list-left">
+                            <div class="bullet-short bullet-top"></div>
+                            <div class="bullet-short"></div>
+                        </div>
+                        <div class="list-right">
+                            <p class="list-text">Mattis Tristique</p>
+                            <p class="list-text">Pharetra Pellentesque Dapibus</p>
+                        </div>
+                    </div>
+                    <div class="list-bottom">
+                        <div class="list-left">
+                            <div class="bullet-long bullet-top"></div>
+                            <div class="bullet-long"></div>
+                        </div>
+                        <div class="list-right">
+                            <p class="list-text">Aenean Inceptos</p>
+                            <p class="list-text">Parturient Bibendum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-right">
+                <div class="calculator">
+                    <h4>Compensation Calculator</h4>
+                    <p class="avarage-income">Avarage income</p>
+                    <div class="input-wrapper">
+                        <input class="input" id="gross-salary" value="1500">
+                        <p class="input-text-eur">€</p>
+                    </div> 
+                    <p class="days-on-text">Days on sick-leave</p>
+                    <div class="input-wrapper">
+                        <input class="input" id="sick-leave-days" value="7">
+                        <p class="input-text-days">days</p>
+                    </div>
+                    <div class="tubercolosis-checkbox-wrapper">
+                        <input id="tubercolosis-checkbox" type="checkbox" onclick="isChecked()">
+                        <p class="tubercolosis-text">I have tubercolosis</p>
+                    </div>
+                    <button id="calculate-button" onclick="calculate()">Calculate</button>
+                    <div class="calculations-wrapper">
+                        <div class="calculations-left">
+                            <p class="days-text">The employer compensates</p>
+                            <p id="employer-days">4 days</p>
+                            <p id="employer-pays">112,00€</p>
+                            <p class="daily-allowance">Daily allowance<br> 28,00€</p>
+                        </div>
+                        <div class="calculations-right">
+                            <p class="days-text">Health Insurance compensates</p>
+                            <p id="health-insurance-days">0 days</p>
+                            <p id="health-insurance-pays">0,00€</p>
+                            <p class="daily-allowance">Daily allowance<br> 28,00€</p>
+                        </div>
+                    </div>
+                    <div class="compensation-wrapper">
+                        <p id="total-days">Compensation total for 7 days (net)</p>
+                        <p id="total-payout">112,00€</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
